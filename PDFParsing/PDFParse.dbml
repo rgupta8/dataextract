@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_PDFParsing" Class="PDFParseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=db_PDFParsing;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="db_PDFParsingConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CATEGORY" Member="CATEGORies">
+    <Type Name="CATEGORY">
+      <Column Name="CATEGORY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CATEGORY_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CATEGORY_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.USERS" Member="USERs">
+    <Type Name="USER">
+      <Column Name="USER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EMAIL_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IS_ADMIN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IS_ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DOCUMENT_CATEGORY" Member="DOCUMENT_CATEGORies">
+    <Type Name="DOCUMENT_CATEGORY">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOCUMENT_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IS_CREDIT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IS_DEBIT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CATEGORY_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDENTIFIER_1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDENTIFIER_2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDENTIFIER_3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DOCUMENT_METATAGS" Member="DOCUMENT_METATAGs">
+    <Type Name="DOCUMENT_METATAG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DOCUMENT_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TITLE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="VALUE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DOCUMENTS" Member="DOCUMENTs">
+    <Type Name="DOCUMENT">
+      <Column Name="DOCUMENT_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USER_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOCUMENT_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOCUMENT_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACCOUNT_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPLOAD_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IS_PASSWORD_PROTECTED" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PARSER_DOCUMENT" Member="PARSER_DOCUMENTs">
+    <Type Name="PARSER_DOCUMENT">
+      <Column Name="PARSER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DOCUMENT_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PARSER_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ADDRESS1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ADDRESS2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ADDRESS3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CITY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACCOUNT_BRANCH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BRANCH_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BRANCH_CITY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BRANCH_STATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BRANCH_PHONENO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CURRENCY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CUSTID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACCOUNTNO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACCOUNT_OPEN_DATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACCOUNT_STATUS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NOMINATION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PARSER_SHEET" Member="PARSER_SHEETs">
+    <Type Name="PARSER_SHEET">
+      <Column Name="SHEET_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PARSER_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NARRATION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CHQ_NO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="VALUE_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="WITHDRAWAL_AMOUNT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DEPOSIT_AMOUNT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CLOSING_BALANCE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CATEGORY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.USER_CATEGORY" Member="USER_CATEGORies">
+    <Type Name="USER_CATEGORY">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USER_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOCUMENT_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IS_CREDIT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IS_DEDIT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CATEGORY_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDENTIFIER_1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDENTIFIER_2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDENTIFIER_3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetReport" Method="GetReport">
+    <Parameter Name="PARSER_ID" Parameter="pARSER_ID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetReportResult">
+      <Column Name="RYEAR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RMONTH" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="RMONTH1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WITHDRAWAL_AMOUNT" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+      <Column Name="DEPOSIT_AMOUNT" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+      <Column Name="CLOSING_BALANCE" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetReport_USER" Method="GetReport_USER">
+    <Parameter Name="USER_ID" Parameter="uSER_ID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetReport_USERResult">
+      <Column Name="RYEAR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RMONTH" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="RMONTH1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Document_Uploaded" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetReport_admin" Method="GetReport_admin">
+    <ElementType Name="GetReport_adminResult">
+      <Column Name="RYEAR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RMONTH" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="RMONTH1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Document_Uploaded" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetAnalysis" Method="GetAnalysis">
+    <Parameter Name="PARSER_ID" Parameter="pARSER_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="YEAR" Parameter="yEAR" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MONTH" Parameter="mONTH" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="QUERY" Parameter="qUERY" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetAnalysisResult">
+      <Column Name="RES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

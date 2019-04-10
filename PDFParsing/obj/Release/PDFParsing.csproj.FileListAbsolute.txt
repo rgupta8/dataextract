@@ -1,0 +1,24 @@
+D:\PIUSH\PDFParsing\PDFParsing\bin\PDFParsing.dll
+D:\PIUSH\PDFParsing\PDFParsing\bin\PDFParsing.pdb
+D:\PIUSH\PDFParsing\PDFParsing\bin\itextsharp.dll
+D:\PIUSH\PDFParsing\PDFParsing\obj\Release\PDFParsing.dll
+D:\PIUSH\PDFParsing\PDFParsing\obj\Release\PDFParsing.pdb
+D:\PERSONAL\PIUSH\PDFParsing\PDFParsing\bin\PDFParsing.dll
+D:\PERSONAL\PIUSH\PDFParsing\PDFParsing\bin\PDFParsing.pdb
+D:\PERSONAL\PIUSH\PDFParsing\PDFParsing\obj\Release\PDFParsing.dll
+D:\PERSONAL\PIUSH\PDFParsing\PDFParsing\obj\Release\PDFParsing.pdb
+D:\PERSONAL\PIUSH\PDFParsing\PDFParsing\obj\Release\PDFParsing.csprojResolveAssemblyReference.cache
+D:\piush-ggg\PDFParsing\PDFParsing\bin\PDFParsing.dll.config
+D:\piush-ggg\PDFParsing\PDFParsing\bin\PDFParsing.dll
+D:\piush-ggg\PDFParsing\PDFParsing\bin\PDFParsing.pdb
+D:\piush-ggg\PDFParsing\PDFParsing\obj\Release\PDFParsing.csprojResolveAssemblyReference.cache
+D:\piush-ggg\PDFParsing\PDFParsing\obj\Release\PDFParsing.dll
+D:\piush-ggg\PDFParsing\PDFParsing\obj\Release\PDFParsing.pdb
+C:\Users\Deanlp\Downloads\PDF Parsing\PDFParsing (Code Files)\PDFParsing\PDFParsing\bin\PDFParsing.dll.config
+C:\Users\Deanlp\Downloads\PDF Parsing\PDFParsing (Code Files)\PDFParsing\PDFParsing\bin\PDFParsing.dll
+C:\Users\Deanlp\Downloads\PDF Parsing\PDFParsing (Code Files)\PDFParsing\PDFParsing\bin\PDFParsing.pdb
+C:\Users\Deanlp\Downloads\PDF Parsing\PDFParsing (Code Files)\PDFParsing\PDFParsing\obj\Release\PDFParsing.csproj.CoreCompileInputs.cache
+C:\Users\Deanlp\Downloads\PDF Parsing\PDFParsing (Code Files)\PDFParsing\PDFParsing\obj\Release\PDFParsing.csproj.CopyComplete
+C:\Users\Deanlp\Downloads\PDF Parsing\PDFParsing (Code Files)\PDFParsing\PDFParsing\obj\Release\PDFParsing.dll
+C:\Users\Deanlp\Downloads\PDF Parsing\PDFParsing (Code Files)\PDFParsing\PDFParsing\obj\Release\PDFParsing.pdb
+C:\Users\Deanlp\Downloads\PDF Parsing\PDFParsing (Code Files)\PDFParsing\PDFParsing\obj\Release\PDFParsing.csprojAssemblyReference.cache

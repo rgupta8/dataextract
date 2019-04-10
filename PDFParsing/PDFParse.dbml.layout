@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PDFParse">
+  <DataContextMoniker Name="/PDFParseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e030c463-14fa-44b0-8e11-49b5592b12a3" isExpanded="false" absoluteBounds="0.75, 0.75, 2, 0.45">
+      <DataClassMoniker Name="/PDFParseDataContext/CATEGORY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc2ceb72-e905-490b-95c7-65b00e1597f7" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ecdca0df-889a-4283-a9de-fbff1cd388c2" isExpanded="false" absoluteBounds="3.75, 0.75, 2, 0.45">
+      <DataClassMoniker Name="/PDFParseDataContext/USER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea5c2b56-586c-4ae6-88f2-fd3ae272b549" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f02a88de-ff70-49c0-99ed-ce40a25f9179" isExpanded="false" absoluteBounds="0.75, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/PDFParseDataContext/DOCUMENT_CATEGORY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="502fcedf-1409-4445-86ba-1191dc510b3b" absoluteBounds="0.765, 2.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="785bba68-2959-4447-9160-0c01ca61101b" isExpanded="false" absoluteBounds="3.75, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/PDFParseDataContext/DOCUMENT_METATAG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7b3d585-5c05-46f5-b9cc-e7374e1f7c56" absoluteBounds="3.765, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0cb71e72-edf4-41f2-859e-0e111d4c2844" isExpanded="false" absoluteBounds="6.75, 0.75, 2, 0.45">
+      <DataClassMoniker Name="/PDFParseDataContext/DOCUMENT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1f89ac5-f674-4d9f-ab13-774b5cf36b13" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0d10a15-ca8d-4be7-89e5-31352ca7309e" isExpanded="false" absoluteBounds="0.75, 2.75, 2, 0.45">
+      <DataClassMoniker Name="/PDFParseDataContext/PARSER_DOCUMENT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc014e84-daaf-4937-95bf-e0e8b6d00b2f" absoluteBounds="0.76500000000000012, 3.21, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ca7bdc1-2ece-431c-a568-34b5ac03071a" isExpanded="false" absoluteBounds="6.75, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/PDFParseDataContext/PARSER_SHEET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c6e8e9b-695c-40c9-b098-80be9000934f" absoluteBounds="6.765, 2.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e45a4ab2-7762-4458-883f-b6553301144d" absoluteBounds="3.75, 2.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/PDFParseDataContext/USER_CATEGORY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba470d6a-43e2-466c-b4d0-fbbf3a31c2e1" absoluteBounds="3.7649999999999997, 3.2100000000000009, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
